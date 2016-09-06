@@ -1,5 +1,5 @@
 # pagseguro-aspnetcore
-Uma implementação da biblioteca do PagSeguro para .Net (https://github.com/pagseguro/dotnet) portada para aspnetcore.
+Uma implementação da biblioteca do PagSeguro para .Net (https://github.com/pagseguro/dotnet) portada para .net core.
 
 Como utilizar
 ========
