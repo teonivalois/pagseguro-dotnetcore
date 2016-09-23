@@ -81,10 +81,7 @@ namespace Uol.PagSeguro.Util
         {
             try
             {
-                var builder = new UriBuilder(urlPath);
-
                 HttpClient client = new HttpClient();
-                client.BaseAddress = new Uri(urlPath.Substring(0, urlPath.IndexOf(builder.Path)));
                 client.Timeout = TimeSpan.FromMilliseconds(PagSeguroConfiguration.RequestTimeout);
                 client.DefaultRequestHeaders.Add("lib-description", ".net:" + PagSeguroConfiguration.LibVersion);
                 client.DefaultRequestHeaders.Add("language-engine-description", ".net:" + PagSeguroConfiguration.LanguageEngineDescription);
@@ -103,11 +100,11 @@ namespace Uol.PagSeguro.Util
 
                 if (HttpURLConnectionUtil.PostMethod.Equals(method))
                 {
-                    return client.PostAsync(builder.Path, new StringContent(query, Encoding.GetEncoding(encoding), contentType)).Result;
+                    return client.PostAsync(urlPath, new StringContent(query, Encoding.GetEncoding(encoding), contentType)).Result;
                 }
                 else
                 {
-                    return client.GetAsync(builder.Path).Result;
+                    return client.GetAsync(urlPath).Result;
                 }
             }
             catch (WebException exception)
