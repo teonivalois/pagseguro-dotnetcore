@@ -1,0 +1,6 @@
+/Users/teoni/Desktop/test/azevedobastos-autenticacao/Uol.PagSeguro/bin/Debug/netstandard1.6/Uol.PagSeguro.deps.json
+/Users/teoni/Desktop/test/azevedobastos-autenticacao/Uol.PagSeguro/obj/Debug/netstandard1.6/Uol.PagSeguro.AssemblyInfo.cs
+/Users/teoni/Desktop/test/azevedobastos-autenticacao/Uol.PagSeguro/bin/Debug/netstandard1.6/Uol.PagSeguro.dll
+/Users/teoni/Desktop/test/azevedobastos-autenticacao/Uol.PagSeguro/bin/Debug/netstandard1.6/Uol.PagSeguro.pdb
+/Users/teoni/Desktop/test/azevedobastos-autenticacao/Uol.PagSeguro/obj/Debug/netstandard1.6/Uol.PagSeguro.dll
+/Users/teoni/Desktop/test/azevedobastos-autenticacao/Uol.PagSeguro/obj/Debug/netstandard1.6/Uol.PagSeguro.pdb
