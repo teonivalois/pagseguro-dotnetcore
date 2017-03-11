@@ -66,7 +66,7 @@ namespace Uol.PagSeguro.Domain.Direct
         /// Returns a string that represents the current object
         /// </summary>
         /// <returns></returns>
-        public String ToString() {
+        public override string ToString() {
             StringBuilder builder = new StringBuilder();
             builder.Append("Installment(");
             builder.Append("quantity=" + Quantity);

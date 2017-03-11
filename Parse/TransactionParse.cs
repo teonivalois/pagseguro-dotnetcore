@@ -127,14 +127,10 @@ namespace Uol.PagSeguro.Parse
                     {
                         data["itemDescription" + i] = item.Description;
                     }
-                    if (item.Quantity != null)
-                    {
-                        data["itemQuantity" + i] = item.Quantity.ToString();
-                    }
-                    if (item.Amount != null)
-                    {
-                        data["itemAmount" + i] = PagSeguroUtil.DecimalFormat(item.Amount);
-                    }
+
+                    data["itemQuantity" + i] = item.Quantity.ToString();
+                    data["itemAmount" + i] = PagSeguroUtil.DecimalFormat(item.Amount);
+                    
                     if (item.Weight != null)
                     {
                         data["itemWeight" + i] = item.Weight.ToString();
@@ -156,7 +152,7 @@ namespace Uol.PagSeguro.Parse
             if (checkout.Shipping != null)
             {
 
-                if (checkout.Shipping.ShippingType != null && checkout.Shipping.ShippingType.Value != null)
+                if (checkout.Shipping.ShippingType != null && checkout.Shipping.ShippingType.HasValue)
                 {
                     data["shippingType"] = checkout.Shipping.ShippingType.Value.ToString();
                 }

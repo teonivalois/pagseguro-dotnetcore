@@ -64,7 +64,7 @@ namespace Uol.PagSeguro.Domain.Installment
         {
         }
 
-        public String ToString() {
+        public override string ToString() {
 
             StringBuilder builder = new StringBuilder();
 
